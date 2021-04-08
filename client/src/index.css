@@ -1,10 +1,45 @@
-* {
+/* * {
     margin: 0 auto;
     padding: 0 auto;
     background-color:aliceblue;
+} */
+/* 
+#root {
+    margin: auto;
+    max-width: 450px;
+    border: 10px solid white;
 }
 
-#root {
+input {
+    margin: 20px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+} */
+
+/* button {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(4, 226, 255);
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, button:focus {
+    background-color: rgba(4, 226, 255, 0.438);
+} */
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    /* color: #6C1B4C; */
+    /* background-color:#93E4B3; */
+}
+
+.main-container {
     margin: auto;
     max-width: 450px;
     border: 10px solid white;
@@ -18,16 +53,12 @@ input {
     border-radius: 5px;
 }
 
-button {
-    margin: 10px;
-    padding: 10px;
-    background-color: rgb(4, 226, 255);
-    outline: none;
-    border: 2px solid black;
-    border-radius: 5px;
-    cursor: pointer;
+.task-item {
+    margin: 20px auto;
+    max-width: 450px;
+    border: 10px solid white;
 }
 
-button:hover, button:focus {
-    background-color: rgba(4, 226, 255, 0.438);
+.Button {
+    margin: 10px;
 }

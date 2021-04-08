@@ -1,4 +1,5 @@
 import { React, useEffect, useState } from "react";
+import Button from "@material-ui/core/Button/index.js";
 
 const MainBody = () => {
     const [task, setTask] = useState("");
@@ -33,7 +34,7 @@ const MainBody = () => {
 
     return (
         <>
-            <div className="container">
+            <div className="main-container">
                 <h1>To-do List</h1>
                 <div className="add-task">
                     <input
@@ -43,29 +44,61 @@ const MainBody = () => {
                         onChange={(e) => setTask(e.target.value)}
                         placeholder="Add a task..."
                     />
-                    <button onClick={handleAdd}>Add Task</button>
-                    <button onClick={() => setTask("")}>Clear</button>
+                    <Button
+                        variant="contained"
+                        color="secondary"
+                        onClick={handleAdd}
+                        style={{
+                            marginRight: 10
+                        }}
+                    >
+                        Add Task
+                    </Button>
+                    <Button
+                        variant="contained"
+                        color="secondary"
+                        onClick={() => setTask("")}
+                    >
+                        Clear
+                    </Button>
                 </div>
                 <div className="clear">
-                    <button
+                    <Button
+                        variant="contained"
+                        color="secondary"
                         onClick={() => {
                             setList([]);
                             setTask("");
                         }}
                     >
                         Clear All Items
-                    </button>
+                    </Button>
                 </div>
+            </div>
+            <div className="task-list">
                 {list.map((task, i) => {
                     return (
                         <div key={i} className="task-item">
-                            <h2>{task}</h2>
-                            <button className={i} onClick={handleEdit}>
+                            <h2 style={{marginBottom: 5}}>{task}</h2>
+                            <Button
+                                className={i}
+                                variant="contained"
+                                color="secondary"
+                                onClick={handleEdit}
+                                style={{
+                                    marginRight: 10
+                                }}
+                            >
                                 Edit
-                            </button>
-                            <button className={i} onClick={handleRemove}>
+                            </Button>
+                            <Button
+                                className={i}
+                                variant="contained"
+                                color="secondary"
+                                onClick={handleRemove}
+                            >
                                 Remove
-                            </button>
+                            </Button>
                         </div>
                     );
                 })}

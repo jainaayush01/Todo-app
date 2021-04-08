@@ -1,7 +1,8 @@
 import "./App.css";
-import MainBody from "./components/MainBody/MainBody";
-// import Navbar from "./components/Navbar/Navbar";
-// import Footer from './components/Footer/Footer'
+import 'fontsource-roboto';
+import MainBody from "./Components/MainBody/MainBody";
+// import Navbar from "./Components/Navbar/Navbar";
+// import Footer from './Components/Footer/Footer'
 
 function App() {
     return (
