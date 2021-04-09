@@ -1,48 +1,17 @@
-/* * {
-    margin: 0 auto;
-    padding: 0 auto;
-    background-color:aliceblue;
-} */
-/* 
-#root {
-    margin: auto;
-    max-width: 450px;
-    border: 10px solid white;
-}
-
-input {
-    margin: 20px;
-    padding: 10px;
-    outline: none;
-    border: 2px solid black;
-    border-radius: 5px;
-} */
-
-/* button {
-    margin: 10px;
-    padding: 10px;
-    background-color: rgb(4, 226, 255);
-    outline: none;
-    border: 2px solid black;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover, button:focus {
-    background-color: rgba(4, 226, 255, 0.438);
-} */
-
 * {
     margin: 0 auto;
     padding: 0 auto;
-    /* color: #6C1B4C; */
-    /* background-color:#93E4B3; */
+}
+
+body {
+    background-color: #FFDDF8;
 }
 
 .main-container {
+    color: #f50057;
+    padding: 20px;
     margin: auto;
     max-width: 450px;
-    border: 10px solid white;
 }
 
 input {
@@ -54,11 +23,14 @@ input {
 }
 
 .task-item {
+    color: #f50057;
     margin: 20px auto;
+    padding: 10px;
     max-width: 450px;
-    border: 10px solid white;
+    box-shadow: 2px 2px 2px 2px #f50057;
 }
 
 .Button {
     margin: 10px;
+    color: #AD04AA;
 }

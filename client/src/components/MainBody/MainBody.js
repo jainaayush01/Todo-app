@@ -16,14 +16,16 @@ const MainBody = () => {
 
     const handleRemove = (e) => {
         const i = parseInt(e.target.className);
-        setList([...list.slice(0, i), ...list.slice(i + 1)]);
+        list.splice(i, 1);
+        setList([...list]);
     };
 
     //removes that from list and focuses on input-task and edits the value as well
     const handleEdit = (e) => {
-        handleRemove(e);
         const i = parseInt(e.target.className);
-        setTask(list[i]);
+        var temp = list.splice(i, 1);
+        setList([...list]);
+        setTask(temp);
         document.getElementById("input-task").focus();
     };
 
@@ -81,7 +83,7 @@ const MainBody = () => {
                         <div key={i} className="task-item">
                             <h2 style={{marginBottom: 5}}>{task}</h2>
                             <Button
-                                className={i}
+                                className={String(i)}
                                 variant="contained"
                                 color="secondary"
                                 onClick={handleEdit}
@@ -92,7 +94,7 @@ const MainBody = () => {
                                 Edit
                             </Button>
                             <Button
-                                className={i}
+                                className={String(i)}
                                 variant="contained"
                                 color="secondary"
                                 onClick={handleRemove}
