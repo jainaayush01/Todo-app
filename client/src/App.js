@@ -1,6 +1,6 @@
 import "./App.css";
 import 'fontsource-roboto';
-import MainBody from "./Components/MainBody/MainBody";
+import MainBody from "./Components/MainBody/MainBody.js";
 // import Navbar from "./Components/Navbar/Navbar";
 // import Footer from './Components/Footer/Footer'
 
